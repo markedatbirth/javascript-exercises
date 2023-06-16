@@ -1,12 +1,15 @@
+// Ai assisted answer. Spent *several* hours on this one and also looked all through articles and discord. Could not seem to figure out 2nd part.
+
 const removeFromArray = function(array, ...args) {
-    const newArray = [];
-    array.forEach((item) => {
-        if (!args.includes(item)) {
-            newArray.push(item);
-          }
-        });
-return newArray;
-};
+  let myArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (!args.includes(array[i])) {
+      myArray.push(array[i]);
+    }
+  }
+  return myArray;
+}
+
 
 /*
 
